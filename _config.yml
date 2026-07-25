@@ -1,8 +1,6 @@
 title: Bangladesh National Emission Inventory
-description: Sector-wise emission inventory development for Bangladesh — calculations, data sources, literature review, and methodology.
-theme: jekyll-theme-cayman
-
-# Enables Jekyll to build markdown pages automatically with the theme above.
-# No local build step needed — GitHub Pages runs Jekyll for you on push.
-
+description: Sector-wise national GHG emission inventory for Bangladesh.
 markdown: kramdown
+kramdown:
+  parse_block_html: true
+plugins: []
