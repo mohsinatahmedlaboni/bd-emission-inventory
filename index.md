@@ -39,7 +39,7 @@ This site is a working, presentable version of the inventory — organized by se
 
 ## Sectors
 
-<div class="sector-grid">
+<div class="sector-grid" markdown="0">
   <a class="sector-card" href="{{ '/sectors/energy.html' | relative_url }}">
     <div class="sector-name">Energy</div>
     <div class="sector-code">IPCC Category 1</div>
