@@ -2,16 +2,17 @@
 layout: none
 title: Home
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ page.title }} – Bangladesh National Emission Inventory</title>
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"/>
+</head>
+<body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <h1>Bangladesh National Emission Inventory</h1>
-    <div class="header-links">
-      <a href="https://github.com/mohsinatahmedlaboni/bd-emission-inventory" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-</header>
+{% include header.html %}
 
 <div class="page">
 
@@ -39,23 +40,23 @@ This site is a working, presentable version of the inventory — organized by se
 ## Sectors
 
 <div class="sector-grid">
-  <a class="sector-card" href="sectors/energy.html">
+  <a class="sector-card" href="{{ '/sectors/energy.html' | relative_url }}">
     <div class="sector-name">Energy</div>
     <div class="sector-code">IPCC Category 1</div>
   </a>
-  <a class="sector-card" href="sectors/ippu.html">
+  <a class="sector-card" href="{{ '/sectors/ippu.html' | relative_url }}">
     <div class="sector-name">IPPU</div>
     <div class="sector-code">IPCC Category 2</div>
   </a>
-  <a class="sector-card" href="sectors/agriculture.html">
+  <a class="sector-card" href="{{ '/sectors/agriculture.html' | relative_url }}">
     <div class="sector-name">Agriculture</div>
     <div class="sector-code">IPCC Category 3</div>
   </a>
-  <a class="sector-card" href="sectors/lulucf.html">
+  <a class="sector-card" href="{{ '/sectors/lulucf.html' | relative_url }}">
     <div class="sector-name">LULUCF</div>
     <div class="sector-code">IPCC Category 3 (Land)</div>
   </a>
-  <a class="sector-card" href="sectors/waste.html">
+  <a class="sector-card" href="{{ '/sectors/waste.html' | relative_url }}">
     <div class="sector-name">Waste</div>
     <div class="sector-code">IPCC Category 4</div>
   </a>
@@ -69,4 +70,7 @@ This site is a working, presentable version of the inventory — organized by se
 
 </div>
 
-<footer class="site-footer">Bangladesh National Emission Inventory &middot; Maintained by Mohsinat Ahmed Laboni</footer>
+{% include footer.html %}
+
+</body>
+</html>
