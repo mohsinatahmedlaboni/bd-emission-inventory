@@ -26,7 +26,7 @@ This project develops a national emission inventory for Bangladesh.
 
 ### Data Sources
 
-Activity data and emission factors are drawn from Bangladesh government reports and databases (e.g. BBS, BPDB, DoE), international databases (e.g. IEA, FAOSTAT), peer-reviewed literature for country-specific emission factors and assumptions, and US EPA/Indian EF/EEA/EMAP guidebooks for default methods and factors. A full, sector-wise reference list is maintained on each sector's Literature Review tab, with a combined [Emission Factors & Guidebooks](emission-factors.html) page listing every EF source used across the inventory.
+Activity data and emission factors are drawn from Bangladesh government reports and databases (e.g. BBS, BPDB, DoE), peer-reviewed literature for country-specific emission factors and assumptions, and US EPA/Indian EF/EEA/EMAP guidebooks for default methods and factors. A full, sector-wise reference list is maintained on each sector's Literature Review tab, with a combined [Emission Factors & Guidebooks](emission-factors.html) page listing every EF source used across the inventory.
 
 ## About This Site
 
