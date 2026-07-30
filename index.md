@@ -30,7 +30,7 @@ Activity data and emission factors are drawn from Bangladesh government reports 
 
 ## About This Site
 
-This site is a VERY DEMO version of nothing for now.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula enim, dictum sed arcu in, vestibulum euismod quam. Integer laoreet non dolor id dapibus. Quisque lobortis fringilla tincidunt. Duis purus libero, viverra ultricies mi nec, fringilla volutpat augue. Phasellus eget magna quis ex interdum sagittis et at risus. Aliquam posuere mattis leo. Mauris gravida diam eget dolor aliquam porta. Donec magna metus, viverra eu ante nec, gravida convallis ipsum. Nunc tincidunt enim nec lorem dictum, sed sagittis ex interdum. Phasellus eu vehicula neque.
 
 ## Sectors
 
