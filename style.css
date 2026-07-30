@@ -22,7 +22,6 @@
   --radius: 10px;
 }
 
-/* ===== Base ===== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -68,7 +67,6 @@ h3 { font-size: 16px; font-weight: 600; margin: 20px 0 8px; }
 p { margin-bottom: 12px; color: #3a362e; }
 ul, ol { margin: 0 0 12px 22px; }
 
-/* ===== Header ===== */
 header.site-header {
   background: linear-gradient(120deg, var(--teal-900), var(--teal-700));
   color: #fff;
@@ -122,7 +120,6 @@ header.site-header {
   color: #fff;
 }
 
-/* ===== Sector grid (index page) ===== */
 .sector-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -160,7 +157,6 @@ header.site-header {
   letter-spacing: 0.03em;
 }
 
-/* ===== Table ===== */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -189,7 +185,6 @@ th {
 
 tbody tr:hover { background: var(--paper-2); }
 
-/* ===== Stats row ===== */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -219,7 +214,6 @@ tbody tr:hover { background: var(--paper-2); }
   color: var(--teal-900);
 }
 
-/* ===== Status badges ===== */
 .status {
   display: inline-block;
   padding: 3px 10px;
@@ -231,7 +225,6 @@ tbody tr:hover { background: var(--paper-2); }
 .status.progress  { background: var(--warn-bg); color: var(--warn-fg); }
 .status.notstarted{ background: var(--bad-bg);  color: var(--bad-fg); }
 
-/* ===== Tabs ===== */
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -265,7 +258,6 @@ tbody tr:hover { background: var(--paper-2); }
 .tab-panel { display: none; padding: 20px 0; }
 .tab-panel.active { display: block; }
 
-/* ===== Map box ===== */
 .map-box {
   border: 2px dashed #b9c9b7;
   border-radius: var(--radius);
@@ -287,7 +279,6 @@ tbody tr:hover { background: var(--paper-2); }
   border-radius: 6px;
 }
 
-/* ===== Footer ===== */
 footer.site-footer {
   border-top: 1px solid var(--line);
   text-align: center;
@@ -296,7 +287,6 @@ footer.site-footer {
   padding: 26px 20px;
 }
 
-/* ===== Misc ===== */
 .back-link {
   display: inline-block;
   margin-bottom: 14px;
