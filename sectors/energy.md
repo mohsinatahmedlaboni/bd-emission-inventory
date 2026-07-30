@@ -22,10 +22,7 @@ title: Energy Sector
   <p class="muted">IPCC Category 1 &middot; Base year 2023 (edit as applicable)</p>
 
   <p style="margin-top:16px;">
-    The Energy sector covers greenhouse gas emissions from fuel combustion and fugitive emissions across
-    energy industries, manufacturing and construction, transport, and other stationary/mobile sources.
-    Emissions are calculated for electricity and heat generation, industrial fuel use, road and other
-    transport, and residential/commercial fuel combustion, following IPCC 1A and 1B categories.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ligula enim, dictum sed arcu in, vestibulum euismod quam. Integer laoreet non dolor id dapibus. Quisque lobortis fringilla tincidunt. Duis purus libero, viverra ultricies mi nec, fringilla volutpat augue. Phasellus eget magna quis ex interdum sagittis et at risus. Aliquam posuere mattis leo. Mauris gravida diam eget dolor aliquam porta. Donec magna metus, viverra eu ante nec, gravida convallis ipsum. Nunc tincidunt enim nec lorem dictum, sed sagittis ex interdum. Phasellus eu vehicula neque. 
   </p>
 
   <div class="stats-row">
