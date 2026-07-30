@@ -58,55 +58,57 @@ p { margin-bottom: 12px; color: #3c3c3a; }
 ul, ol { margin: 0 0 12px 22px; }
 strong { color: var(--navy); }
 
-/* ===== Header — cover style ===== */
+/* ===== Header — two-tier gov-style bar ===== */
 header.site-header {
-  background:
-    linear-gradient(180deg, rgba(31,45,58,0.72), rgba(31,45,58,0.86)),
-    repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 18px);
-  background-color: var(--navy);
-  color: #fdfcf9;
-  padding: 70px 24px 56px;
-  text-align: center;
+  background: var(--navy);
+  padding: 0;
 }
 
 .header-inner {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 24px;
 }
 
 .header-inner h1 {
   color: #fdfcf9;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
   margin: 0;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
+/* second, darker nav strip — full width */
 .header-links {
+  flex: 1 0 100%;
   display: flex;
-  gap: 10px;
+  gap: 28px;
   flex-wrap: wrap;
-  justify-content: center;
+  background: #16283a;
+  margin: 0 -24px;
+  padding: 12px 24px;
 }
 
 .header-links a {
   color: #fdfcf9;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 500;
-  border: 1px solid rgba(255,255,255,0.35);
-  padding: 7px 16px;
-  border-radius: 20px;
-  transition: background 0.15s, border-color 0.15s;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Lora', Georgia, serif;
+  border: none;
+  padding: 0;
+  border-radius: 0;
 }
 
 .header-links a:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.6);
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* ===== Sector grid (index page) ===== */
