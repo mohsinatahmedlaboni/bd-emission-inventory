@@ -14,9 +14,9 @@ title: Home
 
 {% include header.html %}
 
-<div class="page">
+<div class="page" markdown="1">
 
-##What Is This Project
+## What Is This Project
 
 A national emission inventory is a structured, sector-wise accounting of greenhouse gas (GHG) and air pollutant emissions released within a country over a given period, typically a calendar year. It is the foundation for national GHG reporting (e.g. to the UNFCCC), climate policy planning, and air quality management.
 
