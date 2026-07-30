@@ -18,24 +18,19 @@ title: Home
 
 ## What Is This Project
 
-A national emission inventory is a structured, sector-wise accounting of greenhouse gas (GHG) and air pollutant emissions released within a country over a given period, typically a calendar year. It is the foundation for national GHG reporting (e.g. to the UNFCCC), climate policy planning, and air quality management.
-
-This project develops a national emission inventory for Bangladesh, covering the five standard IPCC sectors: Energy, Industrial Processes and Product Use (IPPU), Agriculture, Forestry and Other Land Use (LULUCF), and Waste. Emissions are calculated following the **2006 IPCC Guidelines for National Greenhouse Gas Inventories** (edit if using 2019 Refinement or a different guidebook), using a combination of Tier 1 and Tier 2 methods depending on data availability per sector.
+This project develops a national emission inventory for Bangladesh. 
 
 ### What Is Calculated
 
-- Emissions of CO₂, CH₄, and N₂O (and other gases as applicable) by sector and sub-category
-- Activity data compiled from national statistics, government reports, and international databases
-- Emission factors sourced from IPCC default values and, where available, country-specific studies
-- Results expressed in Gg and CO₂-equivalent (CO₂e) using standard Global Warming Potentials
+- Emissions of CO, PM2.5, PM10, NMVOC, SOx, NOx by sector and sub-category
 
 ### Data Sources
 
-Activity data and emission factors are drawn from Bangladesh government reports and databases (e.g. BBS, BPDB, DoE), international databases (e.g. IEA, FAOSTAT), peer-reviewed literature for country-specific emission factors and assumptions, and IPCC guidebooks for default methods and factors. A full, sector-wise reference list is maintained on each sector's Literature Review tab, with a combined [Emission Factors & Guidebooks](emission-factors.html) page listing every EF source used across the inventory.
+Activity data and emission factors are drawn from Bangladesh government reports and databases (e.g. BBS, BPDB, DoE), international databases (e.g. IEA, FAOSTAT), peer-reviewed literature for country-specific emission factors and assumptions, and US EPA/Indian EF/EEA/EMAP guidebooks for default methods and factors. A full, sector-wise reference list is maintained on each sector's Literature Review tab, with a combined [Emission Factors & Guidebooks](emission-factors.html) page listing every EF source used across the inventory.
 
 ## About This Site
 
-This site is a working, presentable version of the inventory — organized by sector so that calculations, data sources, methodology, and supporting literature can be reviewed independently for each sector. Click into any sector below to see its dataset, methodology report, a spatial reference map (in progress), and literature review.
+This site is a VERY DEMO version of nothing for now.
 
 ## Sectors
 
@@ -44,21 +39,13 @@ This site is a working, presentable version of the inventory — organized by se
     <div class="sector-name">Energy</div>
     <div class="sector-code">IPCC Category 1</div>
   </a>
-  <a class="sector-card" href="{{ '/sectors/ippu.html' | relative_url }}">
-    <div class="sector-name">IPPU</div>
+  <a class="sector-card" href="{{ '/sectors/Transport.html' | relative_url }}">
+    <div class="sector-name">Transport</div>
     <div class="sector-code">IPCC Category 2</div>
   </a>
   <a class="sector-card" href="{{ '/sectors/agriculture.html' | relative_url }}">
     <div class="sector-name">Agriculture</div>
     <div class="sector-code">IPCC Category 3</div>
-  </a>
-  <a class="sector-card" href="{{ '/sectors/lulucf.html' | relative_url }}">
-    <div class="sector-name">LULUCF</div>
-    <div class="sector-code">IPCC Category 3 (Land)</div>
-  </a>
-  <a class="sector-card" href="{{ '/sectors/waste.html' | relative_url }}">
-    <div class="sector-name">Waste</div>
-    <div class="sector-code">IPCC Category 4</div>
   </a>
 </div>
 
