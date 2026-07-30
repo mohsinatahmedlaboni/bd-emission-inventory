@@ -14,7 +14,7 @@ title: Master References
 
 {% include header.html %}
 
-<div class="page">
+<div class="page" markdown="1">
 
 <a class="back-link" href="{{ '/' | relative_url }}">&larr; Home</a>
 
