@@ -25,17 +25,15 @@ title: Master References
 
 - Bangladesh Power Development Board (BPDB), Annual Report 2023.
 - Bangladesh Bureau of Statistics (BBS), relevant statistical yearbooks.
-- IEA Energy Balances.
 
 ## Peer-Reviewed Literature
 
-- Add citations as compiled, sector by sector, from the Literature Review tabs.
+- Lorem epsum
 
 ## Guidebooks
 
-- IPCC (2006). 2006 IPCC Guidelines for National Greenhouse Gas Inventories.
-- IPCC (2019). 2019 Refinement to the 2006 IPCC Guidelines.
-
+- EEA/EMEP
+- US EPA
 </div>
 
 {% include footer.html %}
