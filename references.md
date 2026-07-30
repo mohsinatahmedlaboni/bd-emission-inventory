@@ -1,17 +1,18 @@
 ---
+layout: none
 title: Master References
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{{ page.title }} – Bangladesh National Emission Inventory</title>
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"/>
+</head>
+<body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <h1>Bangladesh National Emission Inventory</h1>
-    <div class="header-links">
-      <a href="https://github.com/mohsinatahmedlaboni/bd-emission-inventory" target="_blank">View on GitHub</a>
-      <a href="{{ '/' | relative_url }}">Home</a>
-    </div>
-  </div>
-</header>
+{% include header.html %}
 
 <div class="page">
 
@@ -37,4 +38,7 @@ title: Master References
 
 </div>
 
-<footer class="site-footer">Bangladesh National Emission Inventory &middot; Maintained by Mohsinat Ahmed Laboni</footer>
+{% include footer.html %}
+
+</body>
+</html>
