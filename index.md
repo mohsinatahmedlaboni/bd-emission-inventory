@@ -1,103 +1,286 @@
----
-layout: none
----
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Bangladesh National Emission Inventory</title>
-<link rel="stylesheet" href="assets/style.css"/>
-</head>
-<body>
+/* =========================================================
+   BD Emission Inventory — stylesheet
+   Minimal academic look: cover-style header, single column,
+   quiet palette, restrained cards/tables.
+   ========================================================= */
 
-<header class="site-header">
-  <div class="header-inner">
-    <h1>Bangladesh National Emission Inventory</h1>
-    <div class="header-links">
-      <a href="https://github.com/mohsinatahmedlaboni/bd-emission-inventory" target="_blank">View on GitHub</a>
-      <a href="https://mohsinatahmedlaboni.github.io" target="_blank">Back to Portfolio</a>
-    </div>
-  </div>
-</header>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 
-<div class="page">
+:root {
+  --ink:      #24292a;
+  --navy:     #1f2d3a;
+  --muted:    #6b6f72;
+  --paper:    #ffffff;
+  --paper-2:  #f6f5f2;
+  --line:     #e4e2dc;
+  --accent:   #7a5c3e;
+  --good-bg:  #eaf1e6; --good-fg: #2f6d33;
+  --warn-bg:  #f7f0df; --warn-fg: #8a6a1e;
+  --bad-bg:   #f5e7e4;  --bad-fg: #99402f;
+  --radius: 6px;
+}
 
-  <h2 style="margin-top:0;">What Is This Project</h2>
-  <p>
-    A national emission inventory is a structured, sector-wise accounting of greenhouse gas (GHG) and air
-    pollutant emissions released within a country over a given period, typically a calendar year. It is the
-    foundation for national GHG reporting (e.g. to the UNFCCC), climate policy planning, and air quality
-    management.
-  </p>
-  <p>
-    This project develops a national emission inventory for Bangladesh, covering the five standard IPCC
-    sectors: Energy, Industrial Processes and Product Use (IPPU), Agriculture, Forestry and Other Land Use
-    (LULUCF), and Waste. Emissions are calculated following the <strong>2006 IPCC Guidelines for National
-    Greenhouse Gas Inventories</strong> (edit if using 2019 Refinement or a different guidebook), using a
-    combination of Tier 1 and Tier 2 methods depending on data availability per sector.
-  </p>
+/* ===== Base ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <h3>What Is Calculated</h3>
-  <ul>
-    <li>Emissions of CO₂, CH₄, and N₂O (and other gases as applicable) by sector and sub-category</li>
-    <li>Activity data compiled from national statistics, government reports, and international databases</li>
-    <li>Emission factors sourced from IPCC default values and, where available, country-specific studies</li>
-    <li>Results expressed in Gg and CO₂-equivalent (CO₂e) using standard Global Warming Potentials</li>
-  </ul>
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  line-height: 1.7;
+  background: var(--paper);
+}
 
-  <h3>Data Sources</h3>
-  <p>
-    Activity data and emission factors are drawn from Bangladesh government reports and databases (e.g.
-    BBS, BPDB, DoE), international databases (e.g. IEA, FAOSTAT), peer-reviewed literature for
-    country-specific emission factors and assumptions, and IPCC guidebooks for default methods and factors.
-    A full, sector-wise reference list is maintained on each sector's Literature Review tab, with a combined
-    <a href="emission-factors.html">Emission Factors &amp; Guidebooks</a> page listing every EF source used
-    across the inventory.
-  </p>
+a { color: var(--navy); text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 2px; }
+a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
-  <h2>About This Site</h2>
-  <p>
-    This site is a working, presentable version of the inventory — organized by sector so that calculations,
-    data sources, methodology, and supporting literature can be reviewed independently for each sector. Click
-    into any sector below to see its dataset, methodology report, a spatial reference map (in progress), and
-    literature review.
-  </p>
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
 
-  <h2>Sectors</h2>
-  <div class="sector-grid">
-    <a class="sector-card" href="sectors/energy.html">
-      <div class="sector-name">Energy</div>
-      <div class="sector-code">IPCC Category 1</div>
-    </a>
-    <a class="sector-card" href="sectors/ippu.html">
-      <div class="sector-name">IPPU</div>
-      <div class="sector-code">IPCC Category 2</div>
-    </a>
-    <a class="sector-card" href="sectors/agriculture.html">
-      <div class="sector-name">Agriculture</div>
-      <div class="sector-code">IPCC Category 3</div>
-    </a>
-    <a class="sector-card" href="sectors/lulucf.html">
-      <div class="sector-name">LULUCF</div>
-      <div class="sector-code">IPCC Category 3 (Land)</div>
-    </a>
-    <a class="sector-card" href="sectors/waste.html">
-      <div class="sector-name">Waste</div>
-      <div class="sector-code">IPCC Category 4</div>
-    </a>
-  </div>
+h1, h2, h3 {
+  font-family: 'Lora', Georgia, serif;
+  color: var(--navy);
+}
 
-  <h2>Other Resources</h2>
-  <ul>
-    <li><a href="emission-factors.html">Emission Factors &amp; Inventory Guidebooks</a> — all EF sources used across the inventory, in one place</li>
-    <li><a href="methodology.html">Overall Methodology</a> — cross-sector approach, QA/QC, uncertainty</li>
-    <li><a href="references.html">Master Reference List</a> — full bibliography</li>
-  </ul>
+h1 { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
+h2 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 40px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 15px; font-weight: 600; margin: 18px 0 8px; color: var(--ink); }
 
-</div>
+p { margin-bottom: 12px; color: #3c3c3a; }
+ul, ol { margin: 0 0 12px 22px; }
+strong { color: var(--navy); }
 
-<footer class="site-footer">Bangladesh National Emission Inventory &middot; Maintained by Mohsinat Ahmed Laboni</footer>
+/* ===== Header — two-tier gov-style bar ===== */
+header.site-header {
+  background: var(--navy);
+  padding: 0;
+}
 
-</body>
-</html>
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 24px;
+}
+
+.header-inner h1 {
+  color: #fdfcf9;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* second, darker nav strip — full width */
+.header-links {
+  flex: 1 0 100%;
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  background: #16283a;
+  margin: 0 -24px;
+  padding: 12px 24px;
+}
+
+.header-links a {
+  color: #fdfcf9;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Lora', Georgia, serif;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.header-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* ===== Sector grid (index page) ===== */
+.sector-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  margin: 14px 0 20px;
+}
+
+.sector-card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--paper);
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.sector-card:hover {
+  border-color: var(--accent);
+  background: var(--paper-2);
+}
+
+.sector-card .sector-name {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.sector-card .sector-code {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ===== Table ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 20px;
+  font-size: 14px;
+}
+
+th, td {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 10px;
+  text-align: left;
+}
+
+th {
+  color: var(--navy);
+  font-weight: 600;
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid var(--navy);
+}
+
+/* ===== Stats row ===== */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 14px 0 24px;
+}
+
+.stat-box {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  background: var(--paper-2);
+}
+
+.stat-box .stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.stat-box .stat-value {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* ===== Status badges ===== */
+.status {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.status.complete  { background: var(--good-bg); color: var(--good-fg); }
+.status.progress  { background: var(--warn-bg); color: var(--warn-fg); }
+.status.notstarted{ background: var(--bad-bg);  color: var(--bad-fg); }
+
+/* ===== Tabs ===== */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  margin-top: 10px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 9px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.tab-btn:hover { color: var(--navy); }
+
+.tab-btn.active {
+  color: var(--navy);
+  border-bottom-color: var(--accent);
+  font-weight: 600;
+}
+
+.tab-panel { display: none; padding: 18px 0; }
+.tab-panel.active { display: block; }
+
+/* ===== Map box ===== */
+.map-box {
+  border: 1px dashed #c7c3b8;
+  border-radius: var(--radius);
+  background: var(--paper-2);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--muted);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.map-box video, .map-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* ===== Footer ===== */
+footer.site-footer {
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 26px 20px;
+}
+
+/* ===== Misc ===== */
+.back-link {
+  display: inline-block;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+.muted { color: var(--muted); font-size: 13px; }
+.download-list { list-style: none; margin-left: 0; }
+.download-list li {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+}
